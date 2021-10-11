@@ -17,7 +17,7 @@ def multiply_list(multList):
     # multList = multStr.split(", ")
     for x in multList:
         # use isdigit() to check if the element in the list is actually an integer so we do not get an error
-        if x.isdigit():
+        if (str(x)).isdigit(): # referenced help from user usr_11 here: https://stackoverflow.com/questions/33049167/attributeerror-int-object-has-no-attribute-isdigit/48224316 since an integer cannot call isdigit()
             x = int(x)
             result *= x
         else:
