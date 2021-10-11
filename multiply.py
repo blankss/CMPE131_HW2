@@ -23,4 +23,3 @@ def multiply_list(list):
         else:
             return False
     return result
-print(multiply_list())
