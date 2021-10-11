@@ -11,10 +11,7 @@ def multiply_list(multList):
     boolean
         False if the input is not valid.
     """
-    # multStr = input("Input: ")
-    # result = 1
-    # multStr = multStr[1:len(multStr) - 1] # need to use slicing to exclude the brackets at either side of the user input since right now the input is a string.
-    # multList = multStr.split(", ")
+    result = 1
     for x in multList:
         # use isdigit() to check if the element in the list is actually an integer so we do not get an error
         if (str(x)).isdigit(): # referenced help from user usr_11 here: https://stackoverflow.com/questions/33049167/attributeerror-int-object-has-no-attribute-isdigit/48224316 since an integer cannot call isdigit()
