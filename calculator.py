@@ -13,6 +13,7 @@ def calculator(number1, number2, operator):
     If the operator or numbers are invalid, the function exits and returns the boolean value false.
     """
     try: #use a try and except block to test whether or not we can convert the 2 numbers into floats for valid input
+        #https://www.tutorialspoint.com/python/python_exceptions.htm for try except handling help
         number1 = float(number1)
         number2 = float(number2)
     except ValueError:
