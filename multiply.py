@@ -1,4 +1,4 @@
-def multiply_list(list):
+def multiply_list(multList):
     """
     Multiplies all of the events in a user inputted list and returns the value.
 
