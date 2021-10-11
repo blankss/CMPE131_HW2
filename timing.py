@@ -1,7 +1,7 @@
 import time
 
 def my_decorator(func):
-    def wrapper():
+    def wrapper(func):
         x = func()
         time.sleep(2)
         y = func()
