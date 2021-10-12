@@ -10,10 +10,10 @@ def calculate_time(func):
         The value to pass into the function to time.
     """
     def wrapper():
-    # help with decorators from https://realpython.com/primer-on-python-decorators/
-    start = time.time()
-    func(*args) #still need to execute the function so we sandwich it between start and end to time it
-    end = time.time()
-    # help from https://realpython.com/python-f-strings/ for f strings
-    print(f"Total time: {end - start}")
-return wrapper
+        # help with decorators from https://realpython.com/primer-on-python-decorators/
+        start = time.time()
+        func(*args) #still need to execute the function so we sandwich it between start and end to time it
+        end = time.time()
+        # help from https://realpython.com/python-f-strings/ for f strings
+        print(f"Total time: {end - start}")
+    return wrapper
