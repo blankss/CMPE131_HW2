@@ -9,7 +9,7 @@ def calculate_time(func):
     func: the function to wrap timer around.
         The value to pass into the function to time.
     """
-    def wrapper():
+    def wrapper(*args):
         start = time.time()
         func(*args)
         end = time.time()
