@@ -5,8 +5,7 @@ def parse_input():
     Returns
     -------
     float
-
-    The calculated float from passing in the parameters of the operands and the operation symbol to calculator.
+        The calculated float from passing in the parameters of the operands and the operation symbol to calculator.
     """
     inputString = input("Enter equation: ")
     inputList = inputString.split(" ")
