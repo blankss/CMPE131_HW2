@@ -1,6 +1,7 @@
 import time
 
-def calculate_time():
+def calculate_time(func):
+    def wrapper():
     """"
     Wraps the func with the wrapper to calculate the runtime and print it out.
 
@@ -15,4 +16,4 @@ def calculate_time():
     end = time.time()
     # help from https://realpython.com/python-f-strings/ for f strings
     print(f"Total time: {end - start}")
-    return calculate_time
+return wrapper
