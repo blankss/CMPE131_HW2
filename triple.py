@@ -1,2 +1,5 @@
-def tripler():
-    pass
+def tripler(func):
+    func()
+    func()
+    func()
+    return tripler
